@@ -2,7 +2,7 @@
 
 	#libraries
 
-require_once '../libraries/login.lib.php';
+require_once '../libraries/auth.lib.php';
 require_once '../libraries/url.lib.php';
 require_once '../libraries/form.lib.php';
 
@@ -16,8 +16,8 @@ require_once '../models/user.model.php';
 
 	#views/redirect
 
-include 'header.php';
-include 'nav.php';
-include 'user_profile.php';
-include 'footer.php';
+include '../views/header.php';
+include '../views/nav.php';
+include '../views/user_profile.php';
+include '../views/footer.php';
 
