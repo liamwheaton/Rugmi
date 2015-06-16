@@ -51,7 +51,7 @@ li{
 header{
 	background: black;
 }
-h1{
+header h1{
 	color: #fff;
 }
 header a{
@@ -63,5 +63,11 @@ header a{
 .button{
 	border-radius: 4px;
 	background: blue;
+}
+
+/*=========== FORM CONTAINER =============*/
+.form-container{
+	max-width: 500px;
+	margin: 0 auto;
 }
 

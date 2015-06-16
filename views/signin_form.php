@@ -1,7 +1,7 @@
 <div class="container">
 
 	<div class="form-container">
-		<h1>Register</h1>
+		<h1>Sign In</h1>
 		<?= Form::open() ?>
 			<div class="form-row">
 				<?= Form::label('username', 'Username') ?>
