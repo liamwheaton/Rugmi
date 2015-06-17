@@ -17,7 +17,7 @@
 
 		<?php foreach ($images->items as $user_image): ?>
 
-			<div class="image_container flex flex-column">
+			<div class="image_container">
 
 				<img class ="image" src="../public/assets/uploads/test.jpg" alt="">
 				
