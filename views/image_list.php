@@ -5,7 +5,7 @@
 	<?php foreach ($images->items as $user_image): ?>
 
 		<div class="image-container">
-			<img class ="image" src="assets/uploads/<?= $user_image->url ?>" alt="">
+			<img class ="image" src="<?= $user_image->url ?>" alt="">
 		</div>
 			
 	<?php endforeach ?>

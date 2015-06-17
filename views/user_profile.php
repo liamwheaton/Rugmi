@@ -21,7 +21,7 @@
 
 			<div class="image_container flex flex-column">
 
-				<img class ="image" src="assets/uploads/<?= $user_image->url ?>" alt="">
+				<img class ="image" src="<?= $user_image->url ?>" alt="">
 				
 				<div class="caption"><p><?= $user_image->caption ?></p></div>
 				
