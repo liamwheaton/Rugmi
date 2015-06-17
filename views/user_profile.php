@@ -1,10 +1,12 @@
 <div class="container">
 
-	<?php $id = $_GET['id']; ?>
+	<?php 
 
-	<?php $user = new User(); ?>
+	$id = $_GET['id'];
+	$user = new User();
+	$user->load($id); 
 
-	<?php $user->load($id); ?>
+	?>
 	
 	<h1>User profile</h1>
 
@@ -19,7 +21,7 @@
 
 			<div class="image_container flex flex-column">
 
-				<img class ="image" src="/assets/uploads/<?= $user_image->url ?>" alt="">
+				<img class ="image" src="assets/uploads/<?= $user_image->url ?>" alt="">
 				
 				<div class="caption"><p><?= $user_image->caption ?></p></div>
 				

@@ -1,23 +1,28 @@
 <div class="container">
-
 	<div class="form-container">
-		<h1>Sign Up</h1>
-		<?= Form::open() ?>
+
+		<?= Form::open('','post', ['class' => 'pure-form pure-form-stacked']) ?>
+
+			<legend><h3>SIGN UP</h3></legend>
 			<div class="form-row">
 				<?= Form::label('username', 'Username') ?>
 				<?= Form::text('username') ?>
 			</div>
+
 			<div class="form-row">
 				<?= Form::label('email', 'Email') ?>
 				<?= Form::text('email') ?>
 			</div>
+
 			<div class="form-row">
 				<?= Form::label('password', 'Password') ?>
-				<?= Form::text('password') ?>
+				<?= Form::password('password') ?>
 			</div>
+
 			<div class="form-row">
-				<?= Form::submit('Sign Up') ?>
+				<?= Form::submit('Submit', ['class' => 'pure-button button-submit']) ?>
 			</div>
+
 		<?= Form::close() ?>
 	</div>
 </div>

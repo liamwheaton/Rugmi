@@ -1,3 +1,4 @@
+
 /*=========== FLEX BOX CLASSES =============*/
 
 .flex{ display: flex; }
@@ -33,42 +34,78 @@ body{
 }
 .container{
 	max-width: 1000px;
-	margin: 0 auto;
-}
-p{
-	line-height: 1.5;
-
+	margin: 100px auto;
 }
 ul{
-	line-height: 1.5;
 	list-style: none;
+	margin: 0;
 }
 li{
-	line-height: 1.5;
 	text-decoration: none;
+}
+
+/*=========== BUTTONS =============*/
+
+.button-secondary,
+.button-submit,
+.button-upload {
+    color: white !important;
+    border-radius: 4px !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) !important;
+}
+.button-upload {
+    background-color: #c0392b !important; /* this is a red */
+}
+.button-secondary {
+    background: #000 !important; /* this is a blue */
+}
+.button-submit {
+    background: #34495e !important; /* this is a dark blue */
 }
 
 /*=========== HEADER =============*/
 header{
-	background: black;
+	background: #000;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
-header h1{
+.head-container{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+header h1 a{
 	color: #fff;
 }
 header a{
-	color: #fff;
 	text-decoration: none;
 	padding: 5px 10px;
 	margin: 10px 5px; 
 }
-.button{
-	border-radius: 4px;
-	background: blue;
-}
 
-/*=========== FORM CONTAINER =============*/
+/*=========== MAIN =============*/
+
+.image-container{
+	margin: 10px;
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+}
+.image-container img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+/*=========== FORM =============*/
 .form-container{
-	max-width: 500px;
+	width: 200px;
 	margin: 0 auto;
+}
+.form-row{
+	margin: 0.8em 0;
+}
+legend h3{
+	margin: 0;
 }
 

@@ -3,6 +3,9 @@
 # 1. Load Libraries
 require_once '../libraries/database.lib.php';
 require_once '../libraries/form.lib.php';
+require_once '../libraries/auth.lib.php';
+
+require_once '../models/user.model.php';
 
 # 2. Logic
 # Create a new user
@@ -12,10 +15,9 @@ if($_POST){
 	$user->username = $_POST['username'];
 	$user->email = $_POST['email'];
 	$user->password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-
-
 	$user->save();
-	login::log_in($user->id);
+	
+	Auth::log_in($user->id);
 	URL::redirect('user.php');
 }
 
