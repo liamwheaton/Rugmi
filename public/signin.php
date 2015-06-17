@@ -3,6 +3,9 @@
 # 1. Load Libraries
 require_once '../libraries/database.lib.php';
 require_once '../libraries/form.lib.php';
+require_once '../libraries/auth.lib.php';
+
+require_once '../models/user.model.php';
 
 # 2. Logic
 
@@ -15,8 +18,8 @@ if($_POST){
 	$success = $user->authenticate();
 
 	if($success){
-		Login::log_in($user->id);
-		URL::redirect('user.php');
+		Auth::log_in($user->id);
+		URL::redirect('user.php?id='.$user->id);
 		
 	}else{
 		echo 'Your login details are incorrect!';

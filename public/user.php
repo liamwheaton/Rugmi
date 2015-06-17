@@ -11,13 +11,13 @@ require_once '../models/images.collection.php';
 require_once '../models/user.model.php';
 
 	#logic
-
+Auth::kickout();
 
 
 	#views/redirect
 
 include '../views/header.php';
-include '../views/nav.php';
+include '../views/admin_nav.php';
 include '../views/user_profile.php';
 include '../views/footer.php';
 

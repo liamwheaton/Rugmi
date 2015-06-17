@@ -1,12 +1,14 @@
 <div class="container">
 
-	<?php $id = $_GET['id']; ?>
+	<?php 
 
-	<?php $user = new User(); ?>
+	$id = $_GET['id'];
+	$user = new User();
+	$user->load($id); 
 
-	<?php $user->load($id); ?>
+	?>
 	
-	<h1>User profile</h1>
+	<h1><?= $user->username ?>'s profile</h1>
 
 	<?php $images = New Images_Collection([
 			'deleted' => '0'
@@ -17,20 +19,28 @@
 
 		<?php foreach ($images->items as $user_image): ?>
 
+<<<<<<< HEAD
 			<div class="image_container">
 
 				<img class ="image" src="../public/assets/uploads/test.jpg" alt="">
-				
-				<div class="caption"><p><?= $user_image->caption ?></p></div>
-				
-				<div class="controls">
+=======
+			<div class="image-container flex flex-column">
 
-					<a href="delete_image.php?id=<?= $user_image->id ?>" class="delete">Delete</a>
-					<a href="edit_image.php?id=<?= $user_image->id ?>" class="edit">Edit</a>
-					
-				</div>
+				<img class ="image" src="assets/uploads/<?= $user_image->url ?>" alt="">
 
 			</div>
+>>>>>>> master
+				
+			<div class="caption"><p><?= $user_image->caption ?></p></div>
+				
+			<div class="controls">
+
+				<a href="delete_image.php?id=<?= $user_image->id ?>" class="delete">Delete</a>
+				<a href="edit_image.php?id=<?= $user_image->id ?>" class="edit">Edit</a>
+				
+			</div>
+
+			
 			
 		<?php endforeach ?>
 
