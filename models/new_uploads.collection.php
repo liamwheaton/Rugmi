@@ -3,7 +3,7 @@
 
 require_once '../libraries/collection.lib.php';
 
-class Images_Collection extends Collection {
+class New_Uploads_Collection extends Collection {
 
 	protected $table = 'images';
 

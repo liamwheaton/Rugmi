@@ -4,9 +4,9 @@
 			<div>
 				<ul class="flex flex-a-center">
 					<li><h1><a href="index.php">RUGMI</a></h1></li>
-					<li><a class="button-upload pure-button" href="#">
+					<!-- <li><a class="button-upload pure-button" href="upload_image.php">
 						<i class="fa fa-upload"></i></i> Upload Image</a>
-					</li>
+					</li> -->
 				</ul>	
 			</div>
 			<ul class="flex">

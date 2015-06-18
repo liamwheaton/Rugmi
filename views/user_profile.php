@@ -8,7 +8,7 @@
 
 	?>
 	
-	<h1>User profile</h1>
+	<h1><?= $user->username ?>'s profile</h1>
 
 	<?php $images = New Images_Collection([
 			'deleted' => '0'
@@ -19,20 +19,23 @@
 
 		<?php foreach ($images->items as $user_image): ?>
 
-			<div class="image_container flex flex-column">
+			<div class="image-container flex flex-column">
 
-				<img class ="image" src="assets/uploads/<?= $user_image->url ?>" alt="">
-				
-				<div class="caption"><p><?= $user_image->caption ?></p></div>
-				
-				<div class="controls">
-
-					<a href="delete_image.php?id=<?= $user_image->id ?>" class="delete">Delete</a>
-					<a href="edit_image.php?id=<?= $user_image->id ?>" class="edit">Edit</a>
-					
-				</div>
+				<img class ="image" src="<?= $user_image->url ?>" alt="">
 
 			</div>
+
+				
+			<div class="caption"><p><?= $user_image->caption ?></p></div>
+				
+			<div class="controls">
+
+				<a href="delete_image.php?id=<?= $user_image->id ?>" class="delete">Delete</a>
+				<a href="edit_image.php?id=<?= $user_image->id ?>" class="edit">Edit</a>
+				
+			</div>
+
+			
 			
 		<?php endforeach ?>
 
