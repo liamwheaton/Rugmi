@@ -4,7 +4,7 @@
 			<div>
 				<ul class="flex flex-a-center">
 					<li><h1><a href="user.php">RUGMI</a></h1></li>
-					<li><a class="pure-button button-upload" href="#">
+					<li><a class="pure-button button-upload" href="upload_image.php">
 						<i class="fa fa-upload"></i></i> Upload Image</a>
 					</li>
 				</ul>	
