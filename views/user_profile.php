@@ -1,49 +1,46 @@
-<div class="container">
+
+<div class="container flex flex-wrap">
 
 	<?php 
 
-	$id = $_GET['id'];
-	$user = new User();
-	$user->load($id); 
+		$id = $_GET['id'];
+		$user = new User();
+		$user->load($id); 
 
 	?>
 	
-	<h1><?= $user->username ?>'s profile</h1>
+	<!-- <h1><?= $user->username ?>'s profile</h1> -->
 
 	<?php $images = New Images_Collection([
 			'deleted' => '0'
 		]); 
 	?>
-	
-	<div class="flex flex-wrap space-between">
 
 		<?php foreach ($images->items as $user_image): ?>
-
-<<<<<<< HEAD
-			<div class="image_container">
-
-				<img class ="image" src="../public/assets/uploads/test.jpg" alt="">
-=======
-			<div class="image-container flex flex-column">
-
-				<img class ="image" src="assets/uploads/<?= $user_image->url ?>" alt="">
-
-			</div>
->>>>>>> master
-				
-			<div class="caption"><p><?= $user_image->caption ?></p></div>
-				
-			<div class="controls">
-
-				<a href="delete_image.php?id=<?= $user_image->id ?>" class="delete">Delete</a>
-				<a href="edit_image.php?id=<?= $user_image->id ?>" class="edit">Edit</a>
-				
-			</div>
-
 			
+			<div class="card flex flex-column">
+			
+				<div class="image-container">
+
+					<img class ="image" src="assets/uploads/<?= $user_image->url ?>" alt="">
+
+				</div>
+
+				<p class = 'date'>posted <?= $user_image->date_posted ?> hours ago</p>	
+				<div class="caption"><p><?= $user_image->caption ?></p></div>
+					
+				<div class="controls flex flex-j-between">
+					
+					<a href="" class="flat-button-grey">3 comments</a>
+					<div>
+						<a href="delete_image.php?id=<?= $user_image->id ?>" class="delete "><i class="fa fa-times"></i></a>
+						<a href="edit_image.php?id=<?= $user_image->id ?>" class="edit"><i class="fa fa-pencil"></i></a>
+					</div>
+					
+				</div>
+
+			</div>
 			
 		<?php endforeach ?>
-
-	</div>
 
 </div>
