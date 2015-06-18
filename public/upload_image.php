@@ -15,7 +15,7 @@ $user_id = Auth::user_id();
 
 if($_POST){
 
-	$new_upload = new new_upload();
+	$new_upload = new rugmi();
 
 	if($_FILES){
 		# Upload the file and...
