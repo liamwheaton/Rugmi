@@ -1,7 +1,7 @@
 <div class="container flex flex-wrap">
 	
 	<!-- Get all the uploaded images from the database & display them -->
-	<?php $images = New Images_Collection(['deleted' => '0']); ?>
+	<?php $images = New New_Uploads_Collection(['deleted' => '0']); ?>
 	<?php foreach ($images->items as $user_image): ?>
 
 		<div class="image-container">
