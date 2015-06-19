@@ -6,7 +6,7 @@ require_once '../libraries/upload.lib.php';
 require_once '../libraries/auth.lib.php';
 require_once '../libraries/url.lib.php';
 
-require_once '../models/new_upload.model.php';
+require_once '../models/picture.model.php';
 
 # 2. Logic
 Auth::kickout('index.php');
@@ -15,17 +15,17 @@ $user_id = Auth::user_id();
 
 if($_POST){
 
-	$new_upload = new rugmi();
+	$picture = new picture();
 
 	if($_FILES){
 		# Upload the file and...
 		$files = UPLOAD::to_folder('assets/uploads/');
 				
 		# Put a link to it in the database
-		$new_upload->caption = $_POST['caption'];
-		$new_upload->user_id = $user_id;
-		$new_upload->url   = $files[0]['filepath'];
-		$new_upload->save();
+		$picture->caption = $_POST['caption'];
+		$picture->user_id = $user_id;
+		$picture->url   = $files[0]['filepath'];
+		$picture->save();
 	}
 
 	URL::redirect('user.php');

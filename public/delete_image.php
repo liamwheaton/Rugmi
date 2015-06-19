@@ -5,13 +5,13 @@
 require_once '../libraries/auth.lib.php';
 require_once '../libraries/url.lib.php';
 
-require_once '../models/image.model.php';
+require_once '../models/picture.model.php';
 
 #2 Logic
 
 Auth::kickout();
 
-$image = new Image();
+$image = new Picture();
 
 $image->load($_GET['id']);
 

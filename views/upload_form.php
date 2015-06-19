@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="form-container">
 		
-	<?= Form::open_upload() ?>
+	<?= Form::open_upload('post',['class' => 'pure-form pure-form-stacked']) ?>
 		<h3>Upload Image</h3>
 
 		<?= Form::label('file', 'File:') ?>
@@ -10,7 +10,7 @@
 		<?= Form::label('caption', 'Caption') ?>
 		<?= Form::textarea('caption', '') ?>
 
-		<?= Form::submit() ?>
+		<?= Form::submit('Submit', ['class' => 'pure-button button-submit']) ?>
 	<?= Form::close() ?>
 
 

@@ -39,6 +39,7 @@ body{
 ul{
 	list-style: none;
 	margin: 0;
+	padding: 0;
 }
 li{
 	text-decoration: none;
@@ -85,7 +86,21 @@ header a{
 }
 
 /*=========== MAIN =============*/
+.single-image-container{
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+}
+.single-image-container img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.comments-container{
+	width: 400px;
+	padding: 0em 1em 1em; 
 
+}
 .image-container{
 	width: 250px;
 	height: 250px;
@@ -117,7 +132,7 @@ header a{
 	color: #555;
 
 }
-.flat-button-grey:hover{
+.flat-button-grey:hover10px
 	background-color: #eee;
 }
 .flat-button-grey:active{
@@ -145,6 +160,9 @@ header a{
 .form-container{
 	width: 200px;
 	margin: 0 auto;
+}
+.comment-form{
+	margin-left: 10px;
 }
 .form-row{
 	margin: 0.8em 0;
