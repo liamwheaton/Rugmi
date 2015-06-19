@@ -16,6 +16,7 @@ if($_POST && $_POST != ""){
 	$comment = new Comment();
 	
 	$comment->content = $_POST['content'];
+	$comment->date = date('Y-m-d H:i:s');
 	$comment->image_id = $_GET['image_id'];
 	$comment->user_id = $user_id;
 	

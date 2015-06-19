@@ -1,13 +1,16 @@
 <?php
 
 # 1. Load Libraries
-require_once '../models/image.model.php';
-require_once '../models/images.collection.php';
+require_once '../models/new_upload.model.php';
+require_once '../models/new_uploads.collection.php';
 require_once '../models/comments.collection.php';
 require_once '../libraries/form.lib.php';
 require_once '../libraries/auth.lib.php';
+require_once '../libraries/url.lib.php';
 
 # 2. Logic
+URL::save();
+
 $image_id = $_GET['image_id'];
 
 

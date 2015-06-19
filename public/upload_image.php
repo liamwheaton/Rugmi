@@ -24,6 +24,7 @@ if($_POST){
 		# Put a link to it in the database
 		$new_upload->caption = $_POST['caption'];
 		$new_upload->user_id = $user_id;
+		$picture->date = date('Y-m-d H:i:s');
 		$new_upload->url   = $files[0]['filepath'];
 		$new_upload->save();
 	}

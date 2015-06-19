@@ -1,5 +1,7 @@
 <div class="container flex flex-wrap">
 	
+	<?php $comments = new Comments_collection(['deleted' => '0']); ?>
+
 	<!-- Get all the uploaded images from the database & display them -->
 	<?php $images = New Images_Collection(['deleted' => '0']); ?>
 	<?php foreach ($images->items as $user_image): ?>
@@ -12,11 +14,11 @@
 
 			</div>
 
-			<p class = 'date'>posted <?= $user_image->date_posted ?> hours ago</p>
+			<p class = 'date'>posted <?= $user_image->date ?></p>
 
 			<div class="controls flex flex-j-between">
 				
-				<a href="" class="flat-button-grey">3 comments</a>
+				<a href="" class="flat-button-grey">Amount comments</a>
 				
 			</div>
 		</div>

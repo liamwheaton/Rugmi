@@ -1,7 +1,8 @@
 <div class="container">
+
 	<div class="image-container">
 	
-		<?php $images = new New_upload([
+		<?php $images = new Picture([
 					'id' => $image_id,
 					'deleted' => '0'
 				]); ?>
@@ -20,27 +21,11 @@
 
 	<div class="">
 
-		<?php $comments = new Comments_Collection([
-					'image_id' => $image_id,
-					'deleted' => '0'
-				]); ?>
-
-					<ul>
-						<? foreach($comments->items as $comment): ?>
-							<li>
-								<?= $comment->content; ?>				
-							</li>
-						<? endforeach; ?>
-					</ul>
-	</div>
-
-	<div class="">
-
 		<?= Form::open("add_comment.php?image_id=".$image_id) ?>
 
 			<div class="row">
 				<?= Form::label('content', 'New Comment') ?>
-				<?= Form::textarea('content') ?>
+				<?= Form::textarea('content' $comment->content) ?>
 			</div>
 
 			<?= Form::submit() ?>
@@ -48,9 +33,4 @@
 
 	</div>
 
-	
-
-
-
-</div>
-
+</div

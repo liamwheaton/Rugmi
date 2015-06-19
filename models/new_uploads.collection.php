@@ -1,5 +1,5 @@
 <?php 
-# images.collection.php
+# new_uploads_collection.collection.php
 
 require_once '../libraries/collection.lib.php';
 
