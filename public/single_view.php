@@ -1,8 +1,10 @@
 <?php
 
 # 1. Load Libraries
-require_once '../models/new_upload.model.php';
-require_once '../models/new_uploads.collection.php';
+
+require_once '../models/picture.model.php';
+require_once '../models/pictures.collection.php';
+
 require_once '../models/comments.collection.php';
 require_once '../libraries/form.lib.php';
 require_once '../libraries/auth.lib.php';

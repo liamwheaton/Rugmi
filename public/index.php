@@ -1,8 +1,8 @@
 <?php
 
 # 1. Load Libraries
-require_once '../models/image.model.php';
-require_once '../models/images.collection.php';
+require_once '../models/picture.model.php';
+require_once '../models/pictures.collection.php';
 
 require_once '../models/comment.model.php';
 require_once '../models/comments.collection.php';

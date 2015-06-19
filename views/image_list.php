@@ -3,8 +3,9 @@
 	<?php $comments = new Comments_collection(['deleted' => '0']); ?>
 
 	<!-- Get all the uploaded images from the database & display them -->
-	<?php $images = New Images_Collection(['deleted' => '0']); ?>
+	<?php $images = New Pictures_Collection(['deleted' => '0']); ?>
 	<?php foreach ($images->items as $user_image): ?>
+
 
 		<div class="card flex flex-column">
 			

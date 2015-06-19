@@ -11,7 +11,7 @@
 	
 	<!-- <h1><?= $user->username ?>'s profile</h1> -->
 
-	<?php $images = New Images_Collection([
+	<?php $images = New Pictures_Collection([
 			'deleted' => '0'
 		]); 
 	?>
