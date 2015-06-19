@@ -28,13 +28,16 @@
 *{box-sizing: border-box;}
 
 body{
-	font-family: 'helvetica neue', helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
 }
 .container{
 	max-width: 1000px;
 	margin: 100px auto;
+}
+p{
+	color: #333;
 }
 ul{
 	list-style: none;
@@ -86,6 +89,9 @@ header a{
 }
 
 /*=========== MAIN =============*/
+.single-view-image{
+	width: 400px;
+}
 .single-image-container{
 	width: 400px;
 	height: 400px;
@@ -97,9 +103,14 @@ header a{
 	object-fit: cover;
 }
 .comments-container{
+	font-size: 0.8em;
 	width: 400px;
-	padding: 0em 1em 1em; 
-
+	padding: 1em; 
+}
+.caption-container{
+	width: 400px;
+	margin-top: ;
+	padding: 1em; 
 }
 .image-container{
 	width: 250px;

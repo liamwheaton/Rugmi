@@ -4,7 +4,7 @@
 
 require_once '../models/picture.model.php';
 require_once '../models/pictures.collection.php';
-
+require_once '../models/user.model.php';
 require_once '../models/comments.collection.php';
 require_once '../libraries/form.lib.php';
 require_once '../libraries/auth.lib.php';
